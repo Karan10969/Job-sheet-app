@@ -1,13 +1,263 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* !! Home Page */
+
+.home-container {
+    height: 96vh;
+    width: 98vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-container header {
+    height: 13%;
+    width: 100%;
+    text-align: center;
+    font-family: "Nunito", system-ui;
+    background-color: #00308F;
+    color: white;
+    border-radius: 0.1em;
+    font-size: 1.8em;
+    padding-top: 0.6em;
+}
+
+.search-bar {
+    margin-top: 1em;
+    width: 100%;
+    height: 7%;
+    display: flex;
+}
+
+#input-search {
+    width: 93%;
+}
+
+.search-button {
+    width: 10%;
+    background-color: #00308F;
+    color: white;
+    border: none;
+    border-radius: 0.2em;
+    font-family: "Nunito", system-ui;
+}
+
+.new-job-sheet-button {
+    font-family: "Nunito", system-ui;
+    width: 11%;
+    height: 7%;
+    background-color: #00308F;
+    color: white;
+    border: none;
+    border-radius: 0.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.jobs-container {
+    height: 60%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.jobs-headings {
+    display: grid;
+    grid-template-columns: 4% 4% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+    grid-template-rows: 100%;
+    background-color: #00308F;
+    color: white;
+    font-family: "Nunito", system-ui;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.jobs-headings section {
+    width: 8%;
+    padding-top: 0.7em;
+    padding: 0.8em;
+}
+
+
+.job {
+    height: 11%;
+    width: 100%;
+    margin-bottom: 0.5em;
+    font-family: "Dosis", sans-serif;
+    display: grid;
+    grid-template-columns: 4% 4% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 12%;
+    grid-template-rows: 100%;
+    font-size: 0.7em;
+}
+.job section::-webkit-scrollbar{
+    display: none;
+}
+.job section {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.215);
+    padding-left: 0.8em;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+
+.job article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#job-view-button {
+    background-color: #00308F;
+    border: none;
+    border-radius: 0.2em;
+    min-height: 4vh;
+    color: white;
+}
+
+#job-edit-button {
+    background-color: #8f5600;
+    border: none;
+    border-radius: 0.2em;
+    min-height: 4vh;
+    color: white;
+}
+
+#job-delete-button {
+    background-color: #8f0000;
+    border: none;
+    border-radius: 0.2em;
+    min-height: 4vh;
+    color: white;
+}
+
+.home-container footer {
+    height: 8%;
+    width: 100%;
+    text-align: center;
+    font-family: "Nunito", system-ui;
+    background-color: #00308F;
+    color: white;
+    border-radius: 0.1em;
+    font-size: 1.1em;
+    padding-top: 0.5em;
+}
+
+/* !! View Job sheet */
+
+.view-job-sheet-container{
+    width: 60vw;
+    margin: 0.5em auto;
+    font-family: "Nunito", system-ui;
+}
+
+.view-header{
+    font-family: "Nunito", system-ui;
+    height: 8vh;
+    background-color: #00308F;
+    color: white;
+    text-align: center;
+    width: 60vw;
+    margin: 0 auto;
+    padding-top: 0.8em;
+    border-radius: 0.2em;
+    box-shadow: 2px 2px 3px black;
+}
+
+.job-info-section {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh;
+    row-gap: 0.1em;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.info-type{
+    padding-left: 0.5em;
+    display: flex;
+    align-items: center;
+    background-color: #00308F;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.info{
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.24);
+    padding-left: 0.7em;
+}
+.view-job-sheet-container textarea{
+    width: 100%;
+    height: 14vh;
+}
+.update-note-button{
+    width: 100%;
+    background-color: #00308F;
+    color: white;
+    border: none;
+    height: 4.5vh;
+    border-radius: 0.1em;
+}
+
+/* !! View Job sheet */
+
+.new-job-form{
+    font-family: "Nunito", system-ui;
+    margin: 2em auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-weight: bold;
+}
+
+.new-job-header{
+    font-family: "Nunito", system-ui;
+    height: 8vh;
+    background-color: #00308F;
+    color: white;
+    text-align: center;
+    width: 60vw;
+    margin: 0 auto;
+    padding-top: 0.8em;
+    border-radius: 0.2em;
+    box-shadow: 2px 2px 3px black;
+}
+
+.edit-header{
+    font-family: "Nunito", system-ui;
+    height: 8vh;
+    background-color: #00308F;
+    color: white;
+    text-align: center;
+    width: 60vw;
+    margin: 0 auto;
+    padding-top: 0.8em;
+    border-radius: 0.2em;
+    box-shadow: 2px 2px 3px black;
+}
+
+
+/*  Search Job */
+.searched-jobs{
+    width: 30%;
+    height: 30vh;
+    background-color: #00308F;
+    position: relative;
+    /* top: 6.5em; */
+    box-shadow: 1px 1px 5px black;
+    overflow-y: scroll;
+    display: none;
+}
+.searched-jobs ul li {
+    font-family: "Nunito", system-ui;
+    padding: 0.5em;
+    list-style: none;
+    background-color: white;
+    height: 8vh;
+    width: 14vw;
+    margin-bottom: 0.2em;
+    padding-top: 0.3em;
+    box-shadow: 1px 1px 4px black;
 }

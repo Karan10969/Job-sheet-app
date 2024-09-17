@@ -1,0 +1,82 @@
+{
+  "jobs": [
+    {
+      "id": "91af",
+      "client_name": "Ironman",
+      "contact_info": "420420",
+      "recieved_date": "1998-11-11",
+      "inventory_recieved": "Nuclear Power",
+      "reported_issues": "Too cheap",
+      "client_notes": "Bring up the price",
+      "assigned_technician": "Fury",
+      "deadline": "0001-01-01",
+      "esitmated_amount": "2300000000",
+      "status": "In-progress"
+    },
+    {
+      "id": "1fe8",
+      "client_name": "Karan Khulve",
+      "contact_info": "1010121212",
+      "recieved_date": "2024-09-17",
+      "inventory_recieved": "Mouse and Keyboard",
+      "reported_issues": "Not working ",
+      "client_notes": "Please fix as soon as possible",
+      "assigned_technician": "Mohan",
+      "deadline": "2024-09-19",
+      "esitmated_amount": "20500",
+      "status": "In-progress"
+    },
+    {
+      "id": "64d5",
+      "client_name": "Deadpool",
+      "contact_info": "121212",
+      "recieved_date": "2024-09-17",
+      "inventory_recieved": "Keyboard",
+      "reported_issues": "Working perfectly fine",
+      "client_notes": "Please fix this as soon as possible",
+      "assigned_technician": "Fransis",
+      "deadline": "2024-12-12",
+      "esitmated_amount": "24,000",
+      "status": "In-progress"
+    },
+    {
+      "id": "f1f4",
+      "client_name": "Yash",
+      "contact_info": "123213",
+      "recieved_date": "0012-12-12",
+      "inventory_recieved": "Mouse",
+      "reported_issues": "asd",
+      "client_notes": "asd",
+      "assigned_technician": "asd",
+      "deadline": "0004-04-04",
+      "esitmated_amount": "asdas",
+      "status": "In-progress"
+    },
+    {
+      "id": "4aa5",
+      "client_name": "Goku SS2",
+      "contact_info": "123213",
+      "recieved_date": "0023-12-12",
+      "inventory_recieved": "asd",
+      "reported_issues": "asdas",
+      "client_notes": "asd",
+      "assigned_technician": "asdasd",
+      "deadline": "0012-12-12",
+      "esitmated_amount": "asdas",
+      "status": "In-progress"
+    },
+    {
+      "id": "278c",
+      "client_name": "Vegeta",
+      "contact_info": "23123",
+      "recieved_date": "0003-12-12",
+      "inventory_recieved": "hkasdas",
+      "reported_issues": "asd",
+      "client_notes": "as",
+      "assigned_technician": "asdas",
+      "deadline": "0001-12-12",
+      "esitmated_amount": "aasd",
+      "status": "In-progress"
+    }
+  ]
+}
